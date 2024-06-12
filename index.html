@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form id="currencyForm">
+            <div>
+                <label for="initialCurrency">Moeda inicial:</label>
+                <input type="text" id="initialCurrency" list="initialDatalist">
+                <datalist id="initialDatalist"></datalist>
+            </div>
+
+            <div>
+                <label for="finalCurrency">Moeda final:</label>
+                <input type="text" id="finalCurrency" list="finalDatalist">
+                <datalist id="finalDatalist"></datalist>
+            </div>
+
+            <button type="submit">Testar</button>
+        </form>
+    </main>
+    
+    <script src="js/getCurrencyCode.js"></script>
+    <script src="js/user.js"></script>
+</body>
+</html>
