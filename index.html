@@ -10,13 +10,15 @@
         <form id="currencyForm">
             <div>
                 <label for="initialCurrency">Moeda inicial:</label>
-                <input type="text" id="initialCurrency" list="initialDatalist">
+                <input type="text" id="initialCurrency" list="initialDatalist" placeholder="Escolha a moeda desejada"> -
+                <input type="number" id="initialCurrencyInput" placeholder="insira o valor para calculo">
                 <datalist id="initialDatalist"></datalist>
             </div>
 
             <div>
                 <label for="finalCurrency">Moeda final:</label>
-                <input type="text" id="finalCurrency" list="finalDatalist">
+                <input type="text" id="finalCurrency" list="finalDatalist" placeholder="Escolha a moeda desejada"> -
+                <input type="text" id="finalCurrencyInput" placeholder="Resultado" readonly>
                 <datalist id="finalDatalist"></datalist>
             </div>
 
@@ -24,7 +26,7 @@
         </form>
     </main>
     
-    <script src="js/getCurrencyCode.js"></script>
-    <script src="js/user.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script src="js/apiRequests/getCurrencyCode.js"></script>
 </body>
 </html>
