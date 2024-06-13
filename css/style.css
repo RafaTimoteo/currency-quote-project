@@ -29,10 +29,17 @@ header {
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
+
 img {
     margin-left: 0;
     margin-right: 10px;
 }
+
+canvas#myChart {
+    max-width: 100%;
+    height: auto;
+}
+
 
 footer{
     background-color: var(--cor0);
@@ -42,3 +49,14 @@ footer{
     bottom: 0;
     left: 0;
     }
+
+footer a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+footer a:hover {
+    color: var(--cor5);
+    text-decoration: underline;
+}

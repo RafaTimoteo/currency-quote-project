@@ -32,22 +32,26 @@
                 <div class="mb-3">
                     <label for="finalCurrency" class="form-label">Moeda final:</label>
                     <input type="text" id="finalCurrency" list="finalDatalist" class="form-control" placeholder="Escolha a moeda desejada"> -
-                    <input type="text" id="finalCurrencyInput" class="form-control" placeholder="Resultado" readonly>
+                    <input type="text" style="font-weight: bold;" id="finalCurrencyInput" class="form-control" placeholder="Resultado" readonly>
                     <datalist id="finalDatalist"></datalist>
                 </div>
-    
                 <button type="submit" class="btn btn-primary">Testar</button>
+                <div id="graphic">
+                    <canvas id="myChart"></canvas>
+                </div>
             </form>
         </div>
     </main>
 
     <footer class="text-white text-center py-3 mt-5">
-        <p>&copy; 2024 Conversor de Moedas</p>
+        <p>&copy; <a href="https://github.com/RafaTimoteo">Rafael Timoteo</a></p>
     </footer>
 
     <script type="module" src="js/main.js"></script>
     <script src="js/apiRequests/getCurrencyCode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </body>
 </html>

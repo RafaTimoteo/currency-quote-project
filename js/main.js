@@ -1,4 +1,5 @@
 import { convertCurrency } from "./util";
+import { createGraphic } from "./graphic";
 
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("currencyForm").addEventListener("submit", CalculateQuote);
@@ -33,7 +34,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 const currencyValue = document.getElementById("initialCurrencyInput").value;
                 document.getElementById("finalCurrencyInput").value = convertCurrency(currencyValue, quote);
-                
+
+                const result = convertCurrency(currencyValue, quote);
+
+                const names = data[cod].name;
+
+                console.log(names)
+
+                createGraphic(currencyValue, result, names)
             })
             .catch(error => {
                 console.error(error);
