@@ -1,0 +1,44 @@
+:root {
+    --cor0: #260213;
+    --cor1: #19593B;
+    --cor2: #0e5f39;
+    --cor3: #0a8049;
+    --cor4: #d9ddd9;
+    --cor5: #ffffff;
+}
+
+body{
+    background-color: var(--cor4) !important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--cor2);
+    color: var(--cor5);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.currency-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--cor5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+img {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+footer{
+    background-color: var(--cor0);
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    }

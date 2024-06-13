@@ -3,30 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/icon.png" type="png">
+    <title>Conversor de Moedas</title>
 </head>
 <body>
+    <header class="text-center py-2">
+        <div class="container">
+          <div class="d-flex justify-content-center align-items-center">
+            <img style="width:90px;" src="img/transferencia-de-dinheiro (1).png" alt="" class="mr-3">
+            <h1 class="m-0">Conversor de Moedas</h1>
+          </div>
+        </div>
+      </header>
+
     <main>
-        <form id="currencyForm">
-            <div>
-                <label for="initialCurrency">Moeda inicial:</label>
-                <input type="text" id="initialCurrency" list="initialDatalist" placeholder="Escolha a moeda desejada"> -
-                <input type="number" id="initialCurrencyInput" placeholder="insira o valor para calculo">
-                <datalist id="initialDatalist"></datalist>
-            </div>
-
-            <div>
-                <label for="finalCurrency">Moeda final:</label>
-                <input type="text" id="finalCurrency" list="finalDatalist" placeholder="Escolha a moeda desejada"> -
-                <input type="text" id="finalCurrencyInput" placeholder="Resultado" readonly>
-                <datalist id="finalDatalist"></datalist>
-            </div>
-
-            <button type="submit">Testar</button>
-        </form>
-    </main>
+        <div class="container mt-5">
+            <form id="currencyForm" class="currency-form">
+                <h2 class="text-center">Conversor</h2>
+                <div class="mb-3">
+                    <label for="initialCurrency" class="form-label">Moeda inicial:</label>
+                    <input type="text" id="initialCurrency" list="initialDatalist" class="form-control" placeholder="Escolha a moeda desejada"> -
+                    <input type="number" id="initialCurrencyInput" class="form-control" placeholder="insira o valor para cálculo">
+                    <datalist id="initialDatalist"></datalist>
+                </div>
     
+                <div class="mb-3">
+                    <label for="finalCurrency" class="form-label">Moeda final:</label>
+                    <input type="text" id="finalCurrency" list="finalDatalist" class="form-control" placeholder="Escolha a moeda desejada"> -
+                    <input type="text" id="finalCurrencyInput" class="form-control" placeholder="Resultado" readonly>
+                    <datalist id="finalDatalist"></datalist>
+                </div>
+    
+                <button type="submit" class="btn btn-primary">Testar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Conversor de Moedas</p>
+    </footer>
+
     <script type="module" src="js/main.js"></script>
     <script src="js/apiRequests/getCurrencyCode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
